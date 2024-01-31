@@ -17,3 +17,10 @@ console.log(myArray.shape); // Output: 'round'
 console.log(myArray); // Output: ['apple', 'banana', 'orange']
 
 //color and shape are not considered array elements but are object properties associated with the array object. 
+
+let arr = [1, 2, 3, 4];
+console.log(arr)
+arr.push(19)
+console.log(arr)
+arr.unshift(77)
+console.log(arr)
