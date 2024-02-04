@@ -24,3 +24,7 @@ arr.push(19)
 console.log(arr)
 arr.unshift(77)
 console.log(arr)
+
+// slice, splice 
+
+// slice does not manipulate the original array but splice does
