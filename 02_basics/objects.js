@@ -1,7 +1,8 @@
 // singleton
-/* objects can be created in two ways
+/* objects can be created in 3 ways
 - using literals
-- using constructor (new keyword) */
+- using constructor (new keyword) 
+- Object.create*/
 
 //literals
 var person = {
@@ -11,7 +12,7 @@ var person = {
         console.log("hi");
     }
 };
-
+console.log(person["name"]);
 //constructor
 
 function Person(name, age) {
@@ -23,3 +24,17 @@ function Person(name, age) {
 }
 
 let person = new Person("Inder",30);
+
+//objec.create
+var personPrototype = {
+    sayHello: function() {
+      console.log('Hello!');
+    }
+  };
+  
+  var person = Object.create(personPrototype);
+  person.name = 'John';
+  person.age = 30;
+// literal = No singleton
+// Constructuin = Singleton
+
