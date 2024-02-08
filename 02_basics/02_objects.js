@@ -38,3 +38,12 @@ var personPrototype = {
 // literal = No singleton
 // Constructuin = Singleton
 
+const mySym = Symbol("key1");
+
+const user = {
+    [mySym]: "sym"
+}
+
+console.log(user[mySym]);
+
+Object.freeze(user);
