@@ -3,3 +3,5 @@
 
  //truthy value
  //"0", 'false'," ", [], {}, function(){}, all others are truthy value
+
+ 
